@@ -1,0 +1,28 @@
+package com.inheritance;
+
+ class Model1 {
+
+	int a=20;
+	int b=40;
+	static String name ="Magician";
+	
+	public static void hello() {
+		System.out.println("Hello From parent class");
+	}
+}
+
+public class Model2 extends Model1 {
+	int c=40;
+	int d=90;
+	String f="false";
+	
+	public static void bye() {
+		System.out.println("Bye From child class");
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(name);
+		hello();
+		bye();
+	}
+}
