@@ -1,0 +1,51 @@
+package com.inheritance;
+
+class Multilevel_Parent {
+	int a = 10;
+	int b = 20;
+
+	public void hello() {
+		System.out.println("Hello from parent");
+	}
+}
+
+class Multilevel_Child extends Multilevel_Parent {
+	int c = 30;
+	int d = 40;
+
+	public void hi() {
+		System.out.println("Hi from child");
+	}
+}
+
+public class Multilevel_Subchild extends Multilevel_Child {
+
+	int e = 50;
+	int f = 60;
+
+	public static void main(String[] args) {
+		Multilevel_Subchild s = new Multilevel_Subchild();
+		System.out.println(s.a);
+		System.out.println(s.b);
+		System.out.println(s.c);
+		System.out.println(s.d);
+		System.out.println(s.e);
+		System.out.println(s.f);
+		Multilevel_Child c = new Multilevel_Child();
+		System.out.println(c.a);
+		System.out.println(c.b);
+		System.out.println(c.c);
+		System.out.println(c.d);
+    // System.out.println(c.e);//not possible
+    // System.out.println(c.f);//not possible
+		Multilevel_Parent p = new Multilevel_Parent();
+		System.out.println(p.a);
+		System.out.println(p.b);
+		// System.out.println(p.c);//Not possible
+		// System.out.println(p.d);//not possible
+     //  System.out.println(p.e);//not possible
+     //  System.out.println(p.f);//not possible
+       
+
+	}
+}
