@@ -1,0 +1,14 @@
+
+public class Student {
+	
+	String name="sai";
+	int age =25;
+	double height=6.0;
+	
+	public void details() {
+		System.out.println("name:"+name);
+		System.out.println("Age:"+age);
+		System.out.println("Height:"+height);
+	}
+
+}
