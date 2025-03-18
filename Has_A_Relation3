@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Start");
+		College.s.details();
+		System.out.println("Main Ends");
+	}
+
+}
