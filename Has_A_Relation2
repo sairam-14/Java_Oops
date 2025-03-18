@@ -1,0 +1,5 @@
+
+public class College {
+
+	static Student s =new Student();
+}
